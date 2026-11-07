@@ -1,0 +1,15 @@
+# @local/dsh-token-quota
+#
+# 左侧栏入口 + 左下角头像区上方悬浮的 Token 余量卡片。
+# 悬浮卡片与详情页共用 Host 路由 /dsh-token-quota/state：
+#   - DeepSeek 账户余额（CNY / 赠送余额）
+#   - 当前高峰 / 空闲时段与下次切换时间
+#   - 每百万 tokens 的输入（缓存命中 / 未命中）与输出价格
+#
+# 价格默认取 DeepSeek 官方 2026-08-17 起生效的峰谷价，
+# 可通过下面 config 覆盖（models / peakWindows / holidays / timeZoneOffsetMinutes）。
+
+- insert:
+    - id: dsh-token-quota
+      name: '@local/dsh-token-quota'
+      config: {}
