@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Token Balance Card",
+    "description": "Floats a small card above the sidebar foot to show the DeepSeek account balance (CNY) and usable tokens, the current peak/off-peak billing period, and the price per million tokens. A sidebar entry opens the full detail page."
+  }
+}
